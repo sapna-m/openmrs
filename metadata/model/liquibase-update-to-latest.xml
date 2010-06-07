@@ -3040,7 +3040,7 @@
 			</column>
 		</addColumn>
 	</changeSet>
-
+	
 	<changeSet id="20091001-1024" author="rcrichton">
 		<preConditions onFail="MARK_RAN">
     		<not>
