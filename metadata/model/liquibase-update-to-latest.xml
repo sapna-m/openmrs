@@ -3288,6 +3288,7 @@
             <column name="date_changed" type="DATETIME" />
         </addColumn>
     </changeSet>
+    
 
     <changeSet id="20100603-1625-2-person_address" author="sapna">
         <preConditions onFail="MARK_RAN"><not><columnExists tableName="person_address" columnName="changed_by"/></not></preConditions>
