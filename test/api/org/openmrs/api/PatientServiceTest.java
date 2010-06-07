@@ -1917,8 +1917,8 @@ public class PatientServiceTest extends BaseContextSensitiveTest {
 	}
 
     /**
-	 * @verifies {@link PatientService#voidPatientIdentifier(PatientIdentifier,String)}
-	 * test = should throw an APIException if the reason is a white space character
+	 * @verifies {@link PatientService#savePatient(Patient)}
+	 * test = should update the date changed and changed by on update of the person address
 	 */
 	@Test
 	@Verifies(value = "should update the date changed and changed by on update of the person address", method="savePatient(Patient)")

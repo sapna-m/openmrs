@@ -710,5 +710,13 @@ public abstract class BaseContextSensitiveTest extends AbstractJUnit4SpringConte
 	public void skipBaseSetup() throws Exception {
 		skipBaseSetup = true;
 	}
-	
+
+    /**
+         *  This is a convenience method to eject an object from the session, this ensures that the next time the
+         *  object is requested it is fetched from the database and is the same object in session
+         */
+    public void evictFromSession(Object obj) {
+        SessionFactory sessionFactory = (SessionFactory) applicationContext.getBean("sessionFactory");
+        sessionFactory.getCurrentSession().evict(obj);
+    }
 }
